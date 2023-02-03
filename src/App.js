@@ -7,10 +7,10 @@ import QuickAction from './components/quickAction'
 const App = () => {
   return (
     <div>
+    <QuickAction/>
         <Header/>
         <Contact/>
         <Footer/>
-        <QuickAction/>
     </div>
   )
 }

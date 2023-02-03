@@ -5,7 +5,7 @@ const QuickAction = () => {
     const [open, setOpen] = useState(false)
 
   return (
-    <div className='w-full h-[100vh] bg-transparent top-0 left-0 fixed'>
+    <div className='w-full h-[100vh] bg-none top-0 left-0 fixed'>
 
         <a href='/' className='absolute w-[60px] h-[60px] rounded-full overflow-hidden bottom-16 left-10 bg-[#4dc247] p-3'>
             <img src='./icons/whatsapp.svg' alt='whatsapp' className='w-full'/>
