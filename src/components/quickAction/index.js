@@ -5,13 +5,14 @@ const QuickAction = () => {
     const [open, setOpen] = useState(false)
 
   return (
-    <div className='w-full h-[100vh] bg-none top-0 left-0 fixed'>
 
-        <a href='/' className='absolute z-50 w-[60px] h-[60px] rounded-full overflow-hidden bottom-16 left-10 bg-[#4dc247] p-3'>
+    <>
+        <a href='/' className='fixed z-50 w-[60px] h-[60px] rounded-full overflow-hidden bottom-16 left-10 bg-[#4dc247] p-3'>
             <img src='./icons/whatsapp.svg' alt='whatsapp' className='w-full'/>
         </a>
 
-        <div className={`bg-primaryColor z-50 w-[300px] ${ !open ? "-right-[300px]" : "right-0"} bottom-[40vh] absolute transition-all duration-500`}>
+
+        <div className={`bg-primaryColor z-50 w-[300px] ${ !open ? "-right-[300px]" : "right-0"} fixed bottom-[40vh] right-0 z-50 transition-all duration-500`}>
             <div className='relative flex items-center'>
                 <button onClick={() => setOpen(!open)} className='w-[48px] h-[48px] bg-primaryColor text-white flex justify-center items-center absolute right-full'>
                     <img src='./icons/telephone.svg' alt='' className='w-[20px] h-[20px]'/>
@@ -34,11 +35,11 @@ const QuickAction = () => {
             </div>
         </div>
 
-        <a href='/' className='absolute z-50 w-[60px] h-[60px] rounded-full overflow-hidden right-4 bottom-4 bg-[#007aff] p-3 flex justify-center items-center'>
+        <a href='/' className='fixed z-50 w-[60px] h-[60px] rounded-full overflow-hidden right-4 bottom-4 bg-[#007aff] p-3 flex justify-center items-center'>
             <i className="fa-regular fa-comment-dots text-white text-3xl"></i>
         </a>
-
-    </div>
+    </>
+    
   )
 }
 
